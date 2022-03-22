@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="=en">
+  <head>
+    <meta charset="=utf-8">
+    <meta http-equiv="=X-UA=Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <meta name="author" content="Madison Schweikert">
+    <!--stylesheets-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/custom.css"> 
+    <link rel="stylesheet" href="css/responsive.css"> 
+  </head>
+  <body>
+    <!--HEADER-->
+    <header class="main-header">
+      <!--navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+        <div class="container">
+          <i class="fa fa-shopping-cart" id="cart-icon"></i>
+          <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <div class="cart-content">
+              <div class="cart-box">
+                <div class="detail-box">
+                  <div class="cart-product-title">ItemName</div>
+                  <div class="cart-price">Price</div>
+                  <input type="number" value="1" class="cart-quantity">
+                </div>
+                <!--remove from cart-->
+                <i class="bx bxs-trash-alt cart-remove"></i>
+              </div>
+            </div>
+            <!--total-->
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">TotalPrice$</div>
+            </div>
+            <!--buy button-->
+            <button type="button" class="btn-buy">Checkout</button>
+            <!--close cart-->
+            <i class="bx bx-x" id="close-cart"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--SITE META-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Madison Schweikert">
+    <title>Home Page</title>
+    <!--SITE ICONS-->
+    <!--fontawesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!--Main style css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--libraries stylesheet-->
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+
+  <body>
+    <!--HEADER MAIN-->
+    <header class="main-header">
+      <!--NAVIGATION-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+            <img src="images/shopping-bag-icon.png" alt="site icon">
+            <span class="text-uppercase fw-lighter ms-2">BRAND NAME</span>
+          </a>
+          <!--NavBar-->
+          <div class="navbar-header">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarMenu">
+              <i class="fa fa-bars"></i>
+            </button> 
+          </div>
+          <!--Toggle Content-->
+          <div class="collapse navbar-collapse order-lg-1" id="navbarMenu">
+            <ul class="nav navbar-nav mx-auto text-center">
+              <li class="nav-item active">
+                <a class="nav-link text-uppercase text-dark" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">My Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Create an Account</a>
+              </li>
+            </ul>
+          </div>
+          <!--Cart, logout-->
+          <div class="order-lg-2 nav-btns">
+            <a href="cart.html" class="btn position-relative">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+            </a>
+            <button class="btn position-relative" type="submit">Logout?
+              <span class="position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--END HEADER-->
+    <!--COLLECTION-->
+    <section id="collection" class="py-5">
+      <div class="container">
+        <!-- <div class="title text-center py-2">
+          <h2 class="position-relative">Welcome</h2>
+        </div> -->
+
+        <div class="special-list row g-0">
+          <!--FILTERS-->
+          <!-- <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+            <p class="text-capitalize mt-3 mb-1">Filters:</p>
+            <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+            <button type="button" class="btn m-2 text-dark" data-filter=".best">Best Sellers</button>
+            <button type="button" class="btn m-2 text-dark" data-filter=".feat">Featured</button>
+            <button type="button" class="btn m-2 text-dark" data-filter=".new">New</button>
+            <button type="button" class="btn m-2 text-dark" data-filter=".sale">On Sale</button>
+          </div> -->
+
+          <!--ITEMS FOR SALE-->
+          <div class="collection-list mt-4 row gx-0 gy-3">
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>    
+            
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+            
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>   
+            
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>    
+            
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+            
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>       
+            
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>    
+            
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+            
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>       
+            
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>
+            
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+              <div class = "special-img position-relative overflow-hidden">
+                <img src="images/luce.jpg" class="w-100">
+                <span class="rounded-pill position-absolute bg-primary text-white d-flex align-items-center justify-content-center" style="width:80px">$45.00</span>
+              </div>
+              <div class="text-center">
+                <p class="text-capitalize mt-3 mb-1">Luce</p>
+                <button type="button" class="btn btn-danger btn-rounded" data-mdb-ripple-color="#ffffff"> Add to Cart <i class="fas fa-download ms-1"></i></button>
+              </div>
+            </div>              
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="text-center text-lg-start bg-dark py-5 text-muted">
+      <!--Section Top-->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!--Left-->
+        <div class="me-5 d-none d-lg-block">
+          
+        </div>
+        <!--Right-->
+        <div>
+          
+        </div>
+      </section>
+
+      <!--Section:Links-->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!--grid row-->
+          <div class="row text-white mt-3">
+            <!--grid column-->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!--content-->
+              <h6 class="text-uppercase text-decoration-none brand text-white fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Company Name.
+              </h6>
+              <p class="text-white text-muted mt-3">
+                Insert something later.
+              </p>
+            </div>
+
+            <!--grid column-->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!--links-->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Navigation Links
+              </h6>
+              <p>
+                <a href="#!" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i>Home
+                </a>
+              </p>
+              <p>
+                <a href="#!" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i>Account
+                </a>
+              </p>   
+              <p>
+                <a href="#!" class="text-white text-decoration-none text-muted">
+                  <i class="fas fa-chevron-right me-1"></i>Help
+                </a>
+              </p>                         
+            </div>
+            <!--grid column-->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!--links-->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Contact Us
+              </h6>
+              <p><i class="fas fa-map-marked-alt me-3"></i>South Carolina, USA</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                smith@business.net
+              </p>
+              <p>
+                <i class="fas fa-phone-alt me-3"></i>
+                +1864-222-2222
+              </p>
+            </div>
+            <!--grid column-->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Follow Us</h6>
+              <div>
+                <ul class="list-unstyled d-flex">
+                  <li>
+                    <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>    
+                  <li>
+                    <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li> 
+                  <li>
+                    <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                      <i class="fab fa-pinterest"></i>
+                    </a>
+                  </li>       
+                  <li>
+                    <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>                                                                  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--copyright-->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright
+      </div>
+    </footer>
+
+    <!--SCRIPTS-->
+
+    <!--JQUERY-->
+    <script src = "node_modules/jquery/dist/jquery.js"></script>
+    <!--ISOTOPE JS-->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!--BOOTSTRAP JS-->
+    <script src = "node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--CUSTOM JS-->
+    <script src = "js/script.js"></script>
+
+
+  </body>
+</html>
